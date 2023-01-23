@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    height: 100%;
+    background-color:orange;
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+img.logo{
+    margin: 1rem;
+    height: 10vh;
+}
+
+main.contenidoprincipal{
+    display: flex;
+    padding: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+img#imgsecreta{
+    height: 15em;
+}
+
+
+
+input#textoEncriptado{
+    padding-bottom: 30%;
+    width: 100%;
+    margin: 0 0 2rem 0;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 3px;
+    background-color: #F3F5FC;
+}
+
+legend{
+    padding: 1rem 0 .5rem 0;
+}
+#textoDesencriptado{
+    display: none;
+    border-radius: 10px;
+}
+
+input::placeholder{
+    color: #0A3871;
+    font-size: 1.2em;
+}
+
+
+#botonEncriptado{
+    padding: .9rem 4.5rem .9rem 4.5rem;
+    background-color: #0A3871;
+    color: white;
+    margin: 0 1rem 0 0;
+}
+#botonDesencriptado{
+    padding: .9rem 3.8rem .9rem 3.8rem;
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+#botonCopiar{
+    display: none;
+    border-radius: 11px;
+    padding: .9rem 4.8rem .9rem 4.8rem;
+    color: #0A3871;
+    background-color: #ffffff;
+    border-color: #0A3871;
+}
+#botonEncriptado, #botonDesencriptado{
+    transition: box-shadow .3s;
+    border-radius: 11px;
+    border: none;
+
+}
+
+#botonEncriptado:hover{
+    box-shadow: 0 0 11px rgba(2, 2, 2, 0.973);
+    cursor: pointer;
+}
+#botonDesencriptado:hover{
+    box-shadow: 0 0 11px rgba(2, 2, 2, 0.973);
+    cursor: pointer;
+}
+
+#botonCopiar:hover{
+    box-shadow: 0 0 11px rgba(2, 2, 2, 0.973);
+    cursor: pointer;
+}
+
+footer{
+    margin: 1rem;
+    background-color: #ffffff;
+    border-radius: 20px;
+    height: 75vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+footer#h2secreto{
+    text-align: center;
+}
+
+#psecreto{
+    text-align: center;
+    font-size: .7rem;
+}
+
+
+@media (max-width:1182px) {
+    header{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width:512px) {
+    legend{
+        text-align: center;
+    }
+    .cajacontenido{
+        display: flex;
+        gap: 0.5em;
+        flex-direction: column;
+    }
+    #botonEncriptado{
+        margin: 0;
+    }
+    #h2secreto{
+        text-align: center;
+    }
+}
