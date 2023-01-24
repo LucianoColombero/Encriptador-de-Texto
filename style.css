@@ -7,7 +7,19 @@
 body{
     height: 100%;
     background-color:orange;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
+
+h1.titulo{
+    font-size: 3rem;
+    margin: 1rem;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 5px 5px 1px gray;
+}
+
 .contenedor{
     display: flex;
     flex-direction: row;
@@ -46,6 +58,7 @@ input#textoEncriptado{
 
 legend{
     padding: 1rem 0 .5rem 0;
+    text-align: start;
 }
 #textoDesencriptado{
     display: none;
@@ -108,7 +121,7 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-
+    box-shadow: 0px 0px 30px whitesmoke;
 }
 
 footer#h2secreto{
